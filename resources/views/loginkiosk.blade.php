@@ -15,7 +15,7 @@
     <!-- Toastr -->
     <link rel="stylesheet" href="{{ asset('template/plugins/toastr/toastr.min.css') }}">
     <!-- Logo for demo purposes -->
-    <link rel="shortcut icon" type="" href="{{ asset('template/img/CPSU_L.png') }}">
+    <link rel="shortcut icon" type="" href="{{ asset('template/img/cpsulogov4.png') }}">
 
     <style type="text/css">
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
