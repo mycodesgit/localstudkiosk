@@ -19,7 +19,7 @@
     <!-- Toastr -->
     <link rel="stylesheet" href="{{ asset('template/plugins/toastr/toastr.min.css') }}">
     <!-- Logo  -->
-    <link rel="shortcut icon" type="" href="{{ asset('template/img/CPSU_L.png') }}">
+    <link rel="shortcut icon" type="" href="{{ asset('template/img/cpsulogov4.png') }}">
     <style>
         .toast-top-right {
             margin-top: 50px;
