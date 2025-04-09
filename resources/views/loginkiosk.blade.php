@@ -396,13 +396,13 @@
         }
     </script>
 
-    {{-- <script>
+    <script>
         // Set the inactivity timeout in milliseconds (2 seconds)
         const inactivityTime = 12000;
 
         // Function to redirect to the target URL
         function redirectToHome() {
-            window.location.href = 'http://localhost/kioskallinone-app/public/';
+            window.location.href = 'https://system.cpsu.edu.ph/kioskallinone-app/public/';
         }
 
         // Initialize a timeout variable
@@ -422,6 +422,6 @@
 
         // Start the timer when the page loads
         window.onload = resetInactivityTimer;
-    </script> --}}
+    </script>
 </body>
 </html>
