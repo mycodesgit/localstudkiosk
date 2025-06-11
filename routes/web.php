@@ -26,8 +26,8 @@ Route::group(['middleware'=>['guest']],function(){
 
 Route::group(['middleware'=>['login_auth']],function(){
     Route::prefix('student')->group(function () {
-        Route::get('/info/kiosk/dashboard/view', [KioskDashController::class, 'kioskhome'])->name('kioskhome');
-        Route::get('/info/kiosk/account/view', [KioskDashController::class, 'kioskaccount'])->name('kioskaccount');
-        Route::get('/info/kiosk/logout', [KioskDashController::class, 'logout'])->name('logout');
+        Route::get('/localstud/info/kiosk/dashboard/view', [KioskDashController::class, 'kioskhome'])->name('kioskhome');
+        Route::get('/localstud/info/kiosk/account/view', [KioskDashController::class, 'kioskaccount'])->name('kioskaccount');
+        Route::get('/localstud/info/kiosk/logout', [KioskDashController::class, 'logout'])->name('logout');
     });
 });
