@@ -130,7 +130,7 @@
                                                             //     }
                                                             //     return $grade;
                                                             // }
-                                                        $isFourScale = Str::contains($studsub->first()->subSec ?? '', '4-');
+                                                        //$isFourScale = Str::contains($studsub->first()->subSec ?? '', '4-');
                                                         
                                                         function displayGrade($grade, $isFourScale = false) {
                                                             if (is_numeric($grade) && strpos($grade, '.') === false) {
