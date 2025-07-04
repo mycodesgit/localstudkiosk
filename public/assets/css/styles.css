@@ -11,7 +11,7 @@
     --first-color: rgb(15, 99, 53);
     --title-color: hsl(228, 18%, 16%);
     --text-color: hsl(0, 0%, 0%);
-    --body-color: hsl(0, 0%, 100%);
+    --body-color: #f4f6f9;
     --shadow-color: hsla(228, 80%, 4%, 0.1);
 
     /*========== Font and typography ==========*/
@@ -117,6 +117,10 @@ body.dark-theme .form-control{
 }
 
 body.dark-theme .sidebar__link:hover {
+    color: #ffffff;
+}
+
+body.dark-theme i{
     color: #ffffff;
 }
 
