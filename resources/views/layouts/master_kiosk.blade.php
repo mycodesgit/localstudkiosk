@@ -17,8 +17,11 @@
     <link rel="stylesheet" href="{{ asset('template/dist/css/coas-style.css') }}">
     <link rel="stylesheet" href="{{ asset('template/dist/css/admission-style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('template/dist/css/sched-style.css') }}" media="(min-width: 768px)">
     <!-- Toastr -->
     <link rel="stylesheet" href="{{ asset('template/plugins/toastr/toastr.min.css') }}">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="{{ asset('template/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css') }}">
     <!-- Logo  -->
     <link rel="shortcut icon" type="" href="{{ asset('template/img/cpsulogov4.png') }}">
     <style>
@@ -63,7 +66,7 @@
     
 
     <!--=============== SIDEBAR ===============-->
-    <nav class="sidebar" id="sidebar" style="background: linear-gradient(135deg, #1f5036 0%, #3a7d5c 100%);">
+    <nav class="sidebar" id="sidebar" style="background: linear-gradient(135deg, #3a7d5c 0%, #1f5036 100%);">
         <div class="sidebar__container">
             <div class="sidebar__user">
                 <div class="sidebar__img">
@@ -118,6 +121,8 @@
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <!-- Toastr -->
     <script src="{{ asset('template/plugins/toastr/toastr.min.js') }}"></script>
+    <!-- SweetAlert2 -->
+    <script src="{{ asset('template/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
 
     <!-- jquery-validation -->
     <script src="{{ asset('template/plugins/jquery-validation/jquery.validate.min.js') }}"></script>
@@ -133,6 +138,10 @@
             toastr.error("{{ session('error') }}")
         @endif
     </script>
+
+    @if(request()->routeIs('schedclassShow'))
+        @include('kioskgrade.viewscheduleresultscript')
+    @endif
 
 </body>
 </html>

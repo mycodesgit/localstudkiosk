@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\KioskDashController;
+use App\Http\Controllers\KioskClassSchedController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,11 @@ Route::group(['middleware'=>['login_auth']],function(){
     Route::prefix('student')->group(function () {
         Route::get('/localstud/info/kiosk/dashboard/view', [KioskDashController::class, 'kioskhome'])->name('kioskhome');
         Route::get('/localstud/info/kiosk/account/view', [KioskDashController::class, 'kioskaccount'])->name('kioskaccount');
+
+        Route::get('/localstud/info/kiosk/schedule/view', [KioskClassSchedController::class, 'schedclassRead'])->name('schedclassRead');
+        Route::get('/localstud/info/kiosk/schedule/view/result', [KioskClassSchedController::class, 'schedclassShow'])->name('schedclassShow');
+        Route::get('/localstud/info/kiosk/schedule/view/result/ajax', [KioskClassSchedController::class, 'fetchSchedule'])->name('fetchSchedule');
+
         Route::get('/localstud/info/kiosk/logout', [KioskDashController::class, 'logout'])->name('logout');
     });
 });

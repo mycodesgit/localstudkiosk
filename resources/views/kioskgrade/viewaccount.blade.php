@@ -105,7 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="vert-tabs-right-two" role="tabpanel" aria-labelledby="vert-tabs-right-two-tab">
-                                    sdsdsd
+                                    
                                 </div>
                             </div>
                         </div>
