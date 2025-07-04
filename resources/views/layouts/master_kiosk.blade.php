@@ -45,10 +45,10 @@
 
 <body>
     <header class="header" id="header">
-        <div class="header__container">
+        <div class="header__container" style="background: linear-gradient(135deg, #1f5036 0%, #3a7d5c 100%);">
             <a href="#" class="header__logo">
-                <i class="fas fa-diagram-predecessor"></i>
-                <span>CISS V.1.0</span>
+                <i class="fas fa-diagram-predecessor" style="color: #e9ecef"></i>
+                <span style="color: #e9ecef">CISS V.1.0</span>
             </a>
 
             <button class="btn btn-default btn-sm" id="header-toggle" style="background-color: rgb(218, 218, 218);">
@@ -63,7 +63,7 @@
     
 
     <!--=============== SIDEBAR ===============-->
-    <nav class="sidebar" id="sidebar">
+    <nav class="sidebar" id="sidebar" style="background: linear-gradient(135deg, #1f5036 0%, #3a7d5c 100%);">
         <div class="sidebar__container">
             <div class="sidebar__user">
                 <div class="sidebar__img">
