@@ -21,7 +21,7 @@ Route::group(['middleware'=>['guest']],function(){
         return view('loginkiosk');
     });
 
-    Route::get('/studkiosk', [LoginController::class, 'loginkioskstud'])->name('loginkioskstud');
+    Route::get('/studkiosk/onsite', [LoginController::class, 'loginkioskstud'])->name('loginkioskstud');
     Route::post('/stud/user_login', [LoginController::class, 'studkiosk_login'])->name('studkiosk_login');
 });
 
